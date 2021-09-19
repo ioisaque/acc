@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+<link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+<title>IV CONGRESSO INTERNACIONAL DE RELAÇÕES POLÍTICO-ECONÔMICAS ENTRE BRASIL E ESTADOS UNIDOS</title>
+<meta charset="UTF-8">
+<meta charset="iso-8859-1">
+<link href="mycss.css" type="text/css" rel="stylesheet">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+
+<body style="padding:0;margin:0;" bgcolor="#7599FB">   
+  <div class="all"> <!-- Divisão, corpo da página inteira. -->
+  
+	<div class="header"> <!-- Cabeçalho. -->
+    	<a href="index.html"><img class="logo" width="250px" heigth="auto" src="img/logo.png"></a>
+        <font class="title">IV CONGRESSO INTERNACIONAL<br>DE RELAÇÕES POLÍTICO-ECONÔMICAS<br>ENTRE BRASIL E ESTADOS UNIDOS</font>
+	</div>
+    
+    <div class="navbar"> <!-- Barra de navegação. -->
+        <a class="navtab" href="congresso.html">Congresso 2015</a>
+        <a class="navtab" href="congressos.html">Congressos Anteriores</a>
+		<a class="navtab" href="inscricao.html">Inscrições 2015</a>
+    </div>    
+    
+    <div class="wrapper"> <!-- Corpo da página. -->
+    	
+    	<div style="margin-top:-5px;" class="box">
+        <p style="font-weight:bold;color:#000000;font-size:16px;">Preencha o formulário e faça a sua pré-inscrição!</p>
+        <p style="font-weight:bold;color:#000000;font-size:11px;">*** Não nos responsabilizamos pela solicitação do visto americano. ***</p>
+
+    <form method="post" action="enviar.php" id="formulario_contato" onsubmit="validaForm(); return false;">
+		<p>
+            <label for="name">Nome</label><br>
+            <input type="text" name="nome" id="nome" placeholder="Seu Nome" style="width:400px; height:20px;" />
+		</p>
+        
+		<p>
+            <label for="inst">Instituição</label><br>
+            <input type="text" name="inst" id="inst" placeholder="Instituição" style="width:400px; height:20px;" />
+		</p>  
+
+		<p>
+            <label for="cargo">Cargo</label><br>
+            <input type="text" name="cargo" id="cargo" placeholder="Seu cargo" style="width:400px; height:20px;" />
+		</p>               
+		
+		<p>
+            <label for="email">E-mail</label><br>
+            <input type="text" name="email" id="email" placeholder="mail@exemplo.com.br" style="width:400px; height:20px;" />
+		</p>
+        
+		<p>
+            <label for="tel">Telefone/Celular</label><br>
+            <input type="text" name="tel" id="tel" placeholder="Telefone para contato" style="width:400px; height:20px;" />
+		</p>
+        
+        <p>
+        	<label for="visto">Possui visto americano?</label><br><br>
+          	<input type="radio" name="visto" id="visto" value="sim" /> SIM <input type="radio" name="visto" id="visto" value="nao" /> NÃO
+        </p>       		
+	
+		<p>
+            <label for="mensagem">Mensagem</label><br>
+            <textarea name="mensagem" id="mensagem" placeholder="Escreva sua mensagem" style="width:400px; height:70px;"></textarea>
+		</p>
+		
+		<p>
+            <input type="reset" value="Limpar" />        
+            <input type="submit" value="Enviar" />
+		</p>
+	</form>
+    
+    <script type="text/javascript">
+        function validaForm()
+        {
+            erro = false;
+            if($('#nome').val() == '')
+            {
+                alert('Você precisa preencher o campo Nome');erro = true;
+            }
+            if($('#inst').val() == '' && !erro)
+            {
+                alert('Você precisa preencher o campo Instituição');erro = true;
+            }
+            if($('#cargo').val() == '' && !erro)
+            {
+                alert('Você precisa preencher o campo Cargo');erro = true;
+            }
+            if($('#tel').val() == '' && !erro)
+            {
+                alert('Você precisa preencher o campo Telefone/Celular');erro = true;
+            }								
+            if($('#email').val() == '' && !erro)
+            {
+                alert('Você precisa preencher o campo E-mail');erro = true;
+            }
+            if($('#mensagem').val() == '' && !erro)
+            {
+                alert('Você precisa preencher o campo Mensagem');erro = true;
+            }
+            
+            //se nao tiver erros
+            if(!erro)
+            {
+                $('#formulario_contato').submit();
+            }
+        }
+    </script>    
+            
+		</div>
+           
+	    </div> <!-- Fim Corpo da página. -->
+    
+   <div class="footer"><!-- Rodapé. -->
+   	<p style="text-align:center;">Copyright © 2015 Conex10. All rights reserved.<br>
+	WebMaster: isaquecostaa@gmail.com</p>
+    </div><!-- Fim Rodapé. -->
+  </div> <!-- Fim Divisão corpo da página. -->
+</body>
+</html>

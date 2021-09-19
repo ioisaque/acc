@@ -1,0 +1,130 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+  background-image:url(img/back.png);
+  background-repeat:repeat-x;
+  background-attachment:fixed;
+  background-position:right,bottom;  
+}
+.all {
+    margin-left:auto;
+    margin-right:auto;
+    width:1024px;
+	position:relative;
+	font-family:Tahoma, Calibri, Verdana, Geneva, sans-serif;	
+}
+.wrapper {
+	padding:20px;		
+	background:rgba(255, 255, 255, 0.5);
+	/* Font settigns */
+	color:#000000;
+	font-size:13px;
+	line-height:1.230;
+	text-align:justify;	
+	text-decoration:none;	
+}
+.blank_wrapper {
+	/* Font settigns */
+	color:#C4C4C4;
+	font-size:13px;
+	line-height:1.230;
+	text-align:justify;	
+	text-decoration:none;	
+}
+.footer {
+    padding:10px;	
+	bottom:0;
+	width:auto;
+	height:auto;	
+	background:rgba(255, 255, 255, 0.7);
+	/* Font settigns */
+	color:#000000;
+	font-size:11px;		
+	text-align:center;
+}
+/* ========================================================= */
+.header {
+	background-color:rgba(255,255,255, 0.5);
+	height:180px;
+}
+.logo {
+	float:left;
+    margin:15px;
+	width:230px;
+	height:155px;
+}
+.title {
+	float:left;
+	padding:25px;	
+	/* Font settigns */
+	color:#000000;
+	font-size:30px;
+	text-align:center;
+	font-family:bowlby-one;
+}
+.navbar {
+	background:rgba(255, 255, 255, 0.7);	
+	height:30px;
+	padding-left:20%;		
+}
+.navtab {
+	padding:30px;
+	line-height:30px;			
+	/* Font settigns */
+	color:#000000;	
+	font-weight:bold;
+	text-align:center;	
+	text-decoration:none;
+}
+.navtab:hover {
+	color:#878C9F;
+}
+/* ========================================================= */
+.container {
+    width:60%;
+	height:auto;	
+	padding:15px;
+	display:inline-block;
+}
+.banner {
+    width:30%;
+	height:auto;
+	padding-left:35px;
+	max-height:600px;
+	display:inline-block;	
+}
+.subtitle {
+	color:#000000;
+	font-size:25px;
+	font-weight:bold;
+	text-align:center;
+	font-family:bowlby-one;
+	background:rgba(255, 255, 255, 0.7);
+}
+.box {	
+	margin-top:15px;		
+	padding:15px;
+	height:auto;
+	color:#000000;
+	background:rgba(255, 255, 255, 0.5);	
+}
+.gboard {
+	padding:20px;	
+	width:auto;	
+	height:auto;
+	background:rgba(255, 255, 255, 0.5);	
+}
+.bd {
+	float:left;
+	max-width:20%;
+	max-height:100%;
+	display:inline-block;	
+}
+.imgg {
+	padding:10px;
+	width:auto;
+	height:auto;
+    max-width:300px;	
+	max-height:250px;	
+	display:inline-block;
+}
